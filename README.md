@@ -8,7 +8,7 @@ Terbilang adalah package untuk mengubah nominal angka rupiah ke dalam bentuk tek
 go get github.com/ekokurniadi/terbilang
 ```
 
-### Then import the indodate package
+### Then import the package
 
 ```go
 import "github.com/ekokurniadi/terbilang"
