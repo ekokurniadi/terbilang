@@ -24,9 +24,9 @@ import (
 )
 
 func main() {
-    angka := 50000
-    terbilang := Terbilang{}
-    fmt.Println(terbilang.Generate(angka))
+    angka  := 50000
+    format := terbilang.Terbilang{}
+    fmt.Println(format.Generate(angka))
     
     //output => lima puluh ribu rupiah
 }
