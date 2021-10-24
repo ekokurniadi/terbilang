@@ -1,17 +1,17 @@
 # 👋 Welcome
 
-# INDODATE
-indodate is a package for golang programming language for date conversion on indonesian format
+# TERBILANG
+Terbilang adalah package untuk mengubah nominal angka rupiah ke dalam nominal angka rupiah dalam bentuk teks 
 
 ### How to install
 ```sh
- go get github.com/ekokurniadi/indodate
+ go get github.com/ekokurniadi/terbilang
 ```
 
 ### Then import the indodate package
 
 ```go
-import "github.com/ekokurniadi/indodate"
+import "github.com/ekokurniadi/terbilang"
 ```
 ### Example Project
 
@@ -22,22 +22,22 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/ekokurniadi/indodate"
+	"github.com/ekokurniadi/terbilang"
 )
 
 func main() {
-	fmt.Println(indodate.LetterDate(time.Now()))    // output : 23 Oktober 2021
-	fmt.Println(indodate.DateWithSlash(time.Now())) // output : 23/10/2021
-	fmt.Println(indodate.DateWithMin(time.Now()))   // output : 23-10-2021
+	angka := 50000
+    terbilang := Terbilang{}
+    fmt.Println(terbilang.Generate(angka))
+    
+    //output => lima puluh ribu rupiah
 }
 
 ```
 ### Run example project and you will see the output
 ```sh
  go run main.go
-23 Oktober 2021
-23/10/2021
-23-10-2021
+lima puluh ribu rupiah
 ```
 
 ### Have Fun :D
