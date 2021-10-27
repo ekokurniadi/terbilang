@@ -3,6 +3,8 @@
 # TERBILANG
 Terbilang adalah package untuk mengubah nominal angka rupiah ke dalam bentuk teks 
 
+<a href="https://pkg.go.dev/github.com/ekokurniadi/terbilang"><img src="https://pkg.go.dev/badge/github.com/ekokurniadi/terbilang.svg" alt="Go Reference"></a>
+
 ### How to install
 ```sh
 go get github.com/ekokurniadi/terbilang
