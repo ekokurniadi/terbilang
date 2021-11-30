@@ -133,8 +133,8 @@ func FormatCampaignDetail(campaign Campaign) CampaignDetailFormatter {
         
         //this coding how to use terbilang package
         //t.Generate() is a function with callback a string
-        t := terbilang.Terbilang{}
-        campaignDetailFormatter.GAmount = t.Generate(int64(campaign.GoalAmount))
+        t := terbilang.Init()
+        campaignDetailFormatter.GAmount = t.Convert(int64(campaign.GoalAmount))
 	
         campaignDetailFormatter.UserID = campaign.UserID
 	campaignDetailFormatter.Slug = campaign.Slug
