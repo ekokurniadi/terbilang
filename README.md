@@ -7,7 +7,7 @@ Terbilang adalah package untuk mengubah nominal angka rupiah ke dalam bentuk tek
 
 ### How to install
 ```sh
-go get github.com/ekokurniadi/terbilang
+go get -u github.com/ekokurniadi/terbilang
 ```
 
 ### Then import the package
@@ -27,8 +27,8 @@ import (
 
 func main() {
     angka  := 50000
-    format := terbilang.Terbilang{}
-    fmt.Println(format.Generate(angka))
+    format := terbilang.Init()
+    fmt.Println(format.Convert(angka))
     
     //output => lima puluh ribu rupiah
 }
@@ -133,8 +133,8 @@ func FormatCampaignDetail(campaign Campaign) CampaignDetailFormatter {
         
         //this coding how to use terbilang package
         //t.Generate() is a function with callback a string
-        t := terbilang.Terbilang{}
-        campaignDetailFormatter.GAmount = t.Generate(int64(campaign.GoalAmount))
+        t := terbilang.Init()
+        campaignDetailFormatter.GAmount = t.Convert(int64(campaign.GoalAmount))
 	
         campaignDetailFormatter.UserID = campaign.UserID
 	campaignDetailFormatter.Slug = campaign.Slug
