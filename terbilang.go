@@ -19,7 +19,7 @@ func (terbilang *Terbilang) numberToText(inputValue int64) string {
 	} else if value < 20 {
 		temp = terbilang.numberToText(int64(value)-10) + " belas"
 	} else if value < 100 {
-		temp = terbilang.numberToText(int64(value)/10) + " belas" + terbilang.numberToText(int64(value)%10)
+		temp = terbilang.numberToText(int64(value)/10) + " puluh" + terbilang.numberToText(int64(value)%10)
 	} else if value < 200 {
 		temp = " seratus" + terbilang.numberToText(int64(value)-100)
 	} else if value < 1000 {
