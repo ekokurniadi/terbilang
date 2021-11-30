@@ -15,7 +15,7 @@ func (terbilang *Terbilang) numberToText(inputValue int64) string {
 	}
 	temp := ""
 	if value < 12 {
-		temp = "" + huruf[int64(value)]
+		temp = " " + huruf[int64(value)]
 	} else if value < 20 {
 		temp = terbilang.numberToText(int64(value)-10) + " belas"
 	} else if value < 100 {
