@@ -27,7 +27,7 @@ import (
 
 func main() {
     angka  := 50000
-    format := terbilang.Init{}
+    format := terbilang.Init()
     fmt.Println(format.Convert(angka))
     
     //output => lima puluh ribu rupiah
