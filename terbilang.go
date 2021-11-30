@@ -23,7 +23,7 @@ func (terbilang *Terbilang) numberToText(inputValue int64) string {
 	} else if value < 200 {
 		temp = " seratus" + terbilang.numberToText(int64(value)-100)
 	} else if value < 1000 {
-		temp = terbilang.numberToText(int64(value)/100) + " ratus " + terbilang.numberToText(int64(value)%100)
+		temp = terbilang.numberToText(int64(value)/100) + " ratus" + terbilang.numberToText(int64(value)%100)
 	} else if value < 2000 {
 		temp = " seribu" + terbilang.numberToText(int64(value)-1000)
 	} else if value < 1000000 {
