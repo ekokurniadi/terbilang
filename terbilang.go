@@ -31,13 +31,13 @@ func (terbilang *terbilang) numberToText(inputValue int64) string {
 	} else if value < 2000 {
 		temp = " seribu " + terbilang.numberToText(int64(value)-1000)
 	} else if value < 1000000 {
-		temp = terbilang.numberToText(int64(value)/1000) + " ribu" + terbilang.numberToText(int64(value)%1000)
+		temp = terbilang.numberToText(int64(value)/1000) + " ribu " + terbilang.numberToText(int64(value)%1000)
 	} else if value < 1000000000 {
 		temp = terbilang.numberToText(int64(value)/1000000) + " juta " + terbilang.numberToText(int64(value)%1000000)
 	} else if value < 1000000000000 {
-		temp = terbilang.numberToText(int64(value)/1000000000) + " milyar" + terbilang.numberToText(int64(math.Mod(value, 1000000000)))
+		temp = terbilang.numberToText(int64(value)/1000000000) + " milyar " + terbilang.numberToText(int64(math.Mod(value, 1000000000)))
 	} else if value < 1000000000000000 {
-		temp = terbilang.numberToText(int64(value)/1000000000000) + " triliun" + terbilang.numberToText(int64(math.Mod(value, 1000000000000)))
+		temp = terbilang.numberToText(int64(value)/1000000000000) + " trilyun " + terbilang.numberToText(int64(math.Mod(value, 1000000000000)))
 	}
 	//return hasil
 	return temp
